@@ -1,0 +1,194 @@
+{
+ "profile": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=10.0\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "16e61116-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "libjpeg/9c#0:534dcc368c999e07e81f146b3466b8f656ef1f55#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "16e61530-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "gettext/0.20.1@bincrafters/stable#0:6c3a931daae9d7916b13c01550e469037fec642b#0",
+    "options": "fPIC=True\nshared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibxml2:fPIC=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:lzma=False\nlibxml2:shared=False\nlibxml2:zlib=True\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "libiconv/1.15#0": "16e61238-fb81-11e9-98ed-32001404c2e0",
+     "libxml2/2.9.9@bincrafters/stable#0": "16e612ec-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e616c0-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "libffi/3.2.1#0:534dcc368c999e07e81f146b3466b8f656ef1f55#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "16e61850-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "protobuf/3.6.1@bincrafters/stable#0:853c4b61e2571e98cd7b854c1cda6bc111b8b32c#0",
+    "options": "fPIC=True\nlite=False\nshared=False\nwith_zlib=False"
+   },
+   "16e612ec-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "libxml2/2.9.9@bincrafters/stable#0:f4d4dc389913ba7d6be3b026feb6e93a89b39006#0",
+    "options": "fPIC=True\niconv=True\nicu=False\nlzma=False\nshared=False\nzlib=True\nlibiconv:fPIC=True\nlibiconv:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0",
+     "libiconv/1.15#0": "16e61238-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e61e86-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "libelf/0.8.13@bincrafters/stable#0:bad7dd1e4b5daf2b9ae8e3ca2e4397d55b8d3583#0",
+    "options": ""
+   },
+   "16e62034-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "gtest/1.8.1@bincrafters/stable#0:b9a1cc8221294c735988f56e5527f8d2adc8e499#0",
+    "options": "build_gmock=True\nfPIC=True\nno_main=False\nshared=False"
+   },
+   "16e6253e-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "glib/2.58.3@bincrafters/stable#0:3211aa20c3b4b8be9ac16650df4ce4ee34cee278#0",
+    "options": "fPIC=True\nshared=False\nwith_elf=True\nwith_pcre=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\ngettext:fPIC=True\ngettext:shared=False\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibxml2:fPIC=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:lzma=False\nlibxml2:shared=False\nlibxml2:zlib=True\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0",
+     "libffi/3.2.1#0": "16e616c0-fb81-11e9-98ed-32001404c2e0",
+     "pcre/8.41#0": "16e620fc-fb81-11e9-98ed-32001404c2e0",
+     "libelf/0.8.13@bincrafters/stable#0": "16e61e86-fb81-11e9-98ed-32001404c2e0",
+     "gettext/0.20.1@bincrafters/stable#0": "16e61530-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e62a70-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "harfbuzz/2.6.1@bincrafters/stable#0:693541ba016479648be7388be09335abae7da778#0",
+    "options": "fPIC=True\nshared=False\nwith_freetype=True\nwith_glib=True\nwith_icu=False\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\ngettext:fPIC=True\ngettext:shared=False\nglib:fPIC=True\nglib:shared=False\nglib:with_elf=True\nglib:with_pcre=True\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibxml2:fPIC=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:lzma=False\nlibxml2:shared=False\nlibxml2:zlib=True\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "freetype/2.10.0#0": "16e625d4-fb81-11e9-98ed-32001404c2e0",
+     "glib/2.58.3@bincrafters/stable#0": "16e6253e-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e62c00-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "double-conversion/3.1.5#0:853c4b61e2571e98cd7b854c1cda6bc111b8b32c#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "16e635d8-fb81-11e9-98ed-32001404c2e0": {
+    "pref": null,
+    "options": "bzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\ndouble-conversion:fPIC=True\ndouble-conversion:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\ngettext:fPIC=True\ngettext:shared=False\nglib:fPIC=True\nglib:shared=False\nglib:with_elf=True\nglib:with_pcre=True\ngtest:build_gmock=True\ngtest:fPIC=True\ngtest:no_main=False\ngtest:shared=False\nharfbuzz:fPIC=True\nharfbuzz:shared=False\nharfbuzz:with_freetype=True\nharfbuzz:with_glib=True\nharfbuzz:with_icu=False\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibpq:disable_rpath=False\nlibpq:fPIC=True\nlibpq:shared=False\nlibpq:with_openssl=False\nlibpq:with_zlib=True\nlibxml2:fPIC=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:lzma=False\nlibxml2:shared=False\nlibxml2:zlib=True\nmsgpack:fPIC=True\nmsgpack:header_only=False\nmsgpack:shared=False\nmsgpack:with_boost=False\nmysql-connector-c:shared=True\nmysql-connector-c:with_ssl=True\nmysql-connector-c:with_zlib=True\nodbc:fPIC=True\nodbc:shared=False\nodbc:with_libiconv=True\nopenssl:386=False\nopenssl:fPIC=True\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_cast=False\nopenssl:no_des=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_hmac=False\nopenssl:no_md2=False\nopenssl:no_md5=False\nopenssl:no_mdc2=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rsa=False\nopenssl:no_sha=False\nopenssl:no_sse2=False\nopenssl:no_threads=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\npcre2:build_pcre2_16=True\npcre2:build_pcre2_32=True\npcre2:build_pcre2_8=True\npcre2:fPIC=True\npcre2:shared=False\npcre2:support_jit=True\npcre2:with_bzip2=True\nprotobuf:fPIC=True\nprotobuf:lite=False\nprotobuf:shared=False\nprotobuf:with_zlib=False\nqt:GUI=True\nqt:commercial=False\nqt:config=None\nqt:cross_compile=/usr/bin/\nqt:device=None\nqt:multiconfiguration=False\nqt:opengl=desktop\nqt:openssl=True\nqt:qt3d=False\nqt:qtactiveqt=False\nqt:qtandroidextras=False\nqt:qtcharts=False\nqt:qtconnectivity=False\nqt:qtdatavis3d=False\nqt:qtdeclarative=False\nqt:qtdoc=False\nqt:qtgamepad=False\nqt:qtgraphicaleffects=False\nqt:qtimageformats=False\nqt:qtlocation=False\nqt:qtlottie=False\nqt:qtmacextras=False\nqt:qtmultimedia=False\nqt:qtnetworkauth=False\nqt:qtpurchasing=False\nqt:qtqa=False\nqt:qtquickcontrols=False\nqt:qtquickcontrols2=False\nqt:qtremoteobjects=False\nqt:qtrepotools=False\nqt:qtscript=False\nqt:qtscxml=False\nqt:qtsensors=False\nqt:qtserialbus=False\nqt:qtserialport=False\nqt:qtspeech=False\nqt:qtsvg=False\nqt:qttools=False\nqt:qttranslations=False\nqt:qtvirtualkeyboard=False\nqt:qtwayland=False\nqt:qtwebchannel=False\nqt:qtwebengine=False\nqt:qtwebglplugin=False\nqt:qtwebsockets=False\nqt:qtwebview=False\nqt:qtwinextras=False\nqt:qtx11extras=False\nqt:qtxmlpatterns=False\nqt:shared=True\nqt:sysroot=None\nqt:widgets=True\nqt:with_doubleconversion=True\nqt:with_freetype=True\nqt:with_glib=False\nqt:with_harfbuzz=True\nqt:with_icu=False\nqt:with_libalsa=False\nqt:with_libjpeg=True\nqt:with_libpng=True\nqt:with_mysql=True\nqt:with_odbc=True\nqt:with_openal=False\nqt:with_pcre2=True\nqt:with_pq=True\nqt:with_sdl2=False\nqt:with_sqlite3=True\nsqlite3:enable_column_metadata=True\nsqlite3:enable_explain_comments=False\nsqlite3:enable_fts3=False\nsqlite3:enable_fts4=False\nsqlite3:enable_fts5=False\nsqlite3:enable_json1=False\nsqlite3:enable_rtree=False\nsqlite3:fPIC=True\nsqlite3:omit_load_extension=False\nsqlite3:shared=False\nsqlite3:threadsafe=1\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "protobuf/3.6.1@bincrafters/stable#0": "16e62c8c-fb81-11e9-98ed-32001404c2e0",
+     "qt/5.13.1@bincrafters/stable#0": "16e62d22-fb81-11e9-98ed-32001404c2e0",
+     "jsonformoderncpp/3.7.0@vthiery/stable#0": "16e62dae-fb81-11e9-98ed-32001404c2e0",
+     "gtest/1.8.1@bincrafters/stable#0": "16e62034-fb81-11e9-98ed-32001404c2e0",
+     "msgpack/3.2.0@bincrafters/stable#0": "16e62e62-fb81-11e9-98ed-32001404c2e0",
+     "protoc_installer/3.6.1@bincrafters/stable": "16e62eee-fb81-11e9-98ed-32001404c2e0"
+    },
+    "path": "/Users/ktje/Code/qt_base/conanfile.txt"
+   },
+   "16e625d4-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "freetype/2.10.0#0:cb656f6d884f8fc76ab61dd32ede672f98113876#0",
+    "options": "fPIC=True\nshared=False\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "libpng/1.6.37#0": "16e63678-fb81-11e9-98ed-32001404c2e0",
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0",
+     "bzip2/1.0.8#0": "16e63722-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e62c8c-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "protobuf/3.6.1@bincrafters/stable#0:853c4b61e2571e98cd7b854c1cda6bc111b8b32c#0",
+    "options": "fPIC=True\nlite=False\nshared=False\nwith_zlib=False"
+   },
+   "16e63cc2-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "libpq/11.5#0:5045cf3306ec68fccd56c763e6fd3897a555b331#0",
+    "options": "disable_rpath=False\nfPIC=True\nshared=False\nwith_openssl=False\nwith_zlib=True\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e63f74-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "pcre2/10.33#0:519f362e9832d00859a5da6d5f76da34ecf8e237#0",
+    "options": "build_pcre2_16=True\nbuild_pcre2_32=True\nbuild_pcre2_8=True\nfPIC=True\nshared=False\nsupport_jit=True\nwith_bzip2=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0",
+     "bzip2/1.0.8#0": "16e63722-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e64280-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "mysql-connector-c/6.1.11#0:53204603b3be10ddaac380bfd290b48e632c6089#0",
+    "options": "shared=True\nwith_ssl=True\nwith_zlib=True\nopenssl:386=False\nopenssl:fPIC=True\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_cast=False\nopenssl:no_des=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_hmac=False\nopenssl:no_md2=False\nopenssl:no_md5=False\nopenssl:no_mdc2=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rsa=False\nopenssl:no_sha=False\nopenssl:no_sse2=False\nopenssl:no_threads=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "openssl/1.1.1d#0": "16e64000-fb81-11e9-98ed-32001404c2e0",
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e62dae-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "jsonformoderncpp/3.7.0@vthiery/stable#0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9#0",
+    "options": ""
+   },
+   "16e62d22-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "qt/5.13.1@bincrafters/stable#0:421cdc94b955b9ac51c3cd00177802f67baf5722#0",
+    "options": "GUI=True\ncommercial=False\nconfig=None\ncross_compile=/usr/bin/\ndevice=None\nmulticonfiguration=False\nopengl=desktop\nopenssl=True\nqt3d=False\nqtactiveqt=False\nqtandroidextras=False\nqtcharts=False\nqtconnectivity=False\nqtdatavis3d=False\nqtdeclarative=False\nqtdoc=False\nqtgamepad=False\nqtgraphicaleffects=False\nqtimageformats=False\nqtlocation=False\nqtlottie=False\nqtmacextras=False\nqtmultimedia=False\nqtnetworkauth=False\nqtpurchasing=False\nqtqa=False\nqtquickcontrols=False\nqtquickcontrols2=False\nqtremoteobjects=False\nqtrepotools=False\nqtscript=False\nqtscxml=False\nqtsensors=False\nqtserialbus=False\nqtserialport=False\nqtspeech=False\nqtsvg=False\nqttools=False\nqttranslations=False\nqtvirtualkeyboard=False\nqtwayland=False\nqtwebchannel=False\nqtwebengine=False\nqtwebglplugin=False\nqtwebsockets=False\nqtwebview=False\nqtwinextras=False\nqtx11extras=False\nqtxmlpatterns=False\nshared=True\nsysroot=None\nwidgets=True\nwith_doubleconversion=True\nwith_freetype=True\nwith_glib=False\nwith_harfbuzz=True\nwith_icu=False\nwith_libalsa=False\nwith_libjpeg=True\nwith_libpng=True\nwith_mysql=True\nwith_odbc=True\nwith_openal=False\nwith_pcre2=True\nwith_pq=True\nwith_sdl2=False\nwith_sqlite3=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\ndouble-conversion:fPIC=True\ndouble-conversion:shared=False\nfreetype:fPIC=True\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\ngettext:fPIC=True\ngettext:shared=False\nglib:fPIC=True\nglib:shared=False\nglib:with_elf=True\nglib:with_pcre=True\nharfbuzz:fPIC=True\nharfbuzz:shared=False\nharfbuzz:with_freetype=True\nharfbuzz:with_glib=True\nharfbuzz:with_icu=False\nlibffi:fPIC=True\nlibffi:shared=False\nlibiconv:fPIC=True\nlibiconv:shared=False\nlibjpeg:fPIC=True\nlibjpeg:shared=False\nlibpng:api_prefix=None\nlibpng:fPIC=True\nlibpng:shared=False\nlibpq:disable_rpath=False\nlibpq:fPIC=True\nlibpq:shared=False\nlibpq:with_openssl=False\nlibpq:with_zlib=True\nlibxml2:fPIC=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:lzma=False\nlibxml2:shared=False\nlibxml2:zlib=True\nmysql-connector-c:shared=True\nmysql-connector-c:with_ssl=True\nmysql-connector-c:with_zlib=True\nodbc:fPIC=True\nodbc:shared=False\nodbc:with_libiconv=True\nopenssl:386=False\nopenssl:fPIC=True\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_cast=False\nopenssl:no_des=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_hmac=False\nopenssl:no_md2=False\nopenssl:no_md5=False\nopenssl:no_mdc2=False\nopenssl:no_rc2=False\nopenssl:no_rc4=False\nopenssl:no_rc5=False\nopenssl:no_rsa=False\nopenssl:no_sha=False\nopenssl:no_sse2=False\nopenssl:no_threads=False\nopenssl:no_zlib=False\nopenssl:openssldir=None\nopenssl:shared=False\npcre:build_pcrecpp=False\npcre:build_pcregrep=False\npcre:fPIC=True\npcre:shared=False\npcre:with_bzip2=True\npcre:with_jit=False\npcre:with_unicode_properties=False\npcre:with_utf=False\npcre:with_zlib=True\npcre2:build_pcre2_16=True\npcre2:build_pcre2_32=True\npcre2:build_pcre2_8=True\npcre2:fPIC=True\npcre2:shared=False\npcre2:support_jit=True\npcre2:with_bzip2=True\nsqlite3:enable_column_metadata=True\nsqlite3:enable_explain_comments=False\nsqlite3:enable_fts3=False\nsqlite3:enable_fts4=False\nsqlite3:enable_fts5=False\nsqlite3:enable_json1=False\nsqlite3:enable_rtree=False\nsqlite3:fPIC=True\nsqlite3:omit_load_extension=False\nsqlite3:shared=False\nsqlite3:threadsafe=1\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0",
+     "openssl/1.1.1d#0": "16e64000-fb81-11e9-98ed-32001404c2e0",
+     "pcre2/10.33#0": "16e63f74-fb81-11e9-98ed-32001404c2e0",
+     "double-conversion/3.1.5#0": "16e62c00-fb81-11e9-98ed-32001404c2e0",
+     "freetype/2.10.0#0": "16e625d4-fb81-11e9-98ed-32001404c2e0",
+     "harfbuzz/2.6.1@bincrafters/stable#0": "16e62a70-fb81-11e9-98ed-32001404c2e0",
+     "libjpeg/9c#0": "16e61116-fb81-11e9-98ed-32001404c2e0",
+     "libpng/1.6.37#0": "16e63678-fb81-11e9-98ed-32001404c2e0",
+     "sqlite3/3.29.0#0": "16e644ec-fb81-11e9-98ed-32001404c2e0",
+     "mysql-connector-c/6.1.11#0": "16e64280-fb81-11e9-98ed-32001404c2e0",
+     "libpq/11.5#0": "16e63cc2-fb81-11e9-98ed-32001404c2e0",
+     "odbc/2.3.7#0": "16e645be-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e644ec-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "sqlite3/3.29.0#0:38790fe58c555fbcf555db9ac8aabbc3129f50f4#55066ea384fbbc09d50f3f156c3651d3",
+    "options": "enable_column_metadata=True\nenable_explain_comments=False\nenable_fts3=False\nenable_fts4=False\nenable_fts5=False\nenable_json1=False\nenable_rtree=False\nfPIC=True\nomit_load_extension=False\nshared=False\nthreadsafe=1"
+   },
+   "16e618d2-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "zlib/1.2.11#0:534dcc368c999e07e81f146b3466b8f656ef1f55#0",
+    "options": "fPIC=True\nminizip=False\nshared=False"
+   },
+   "16e645be-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "odbc/2.3.7#0:73536212876d8dbd33e29937e2d8a79e913b9101#0",
+    "options": "fPIC=True\nshared=False\nwith_libiconv=True\nlibiconv:fPIC=True\nlibiconv:shared=False",
+    "requires": {
+     "libiconv/1.15#0": "16e61238-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e63722-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "bzip2/1.0.8#0:25d69afe851bfb8cb5aedd20123fa41e061f316e#0",
+    "options": "build_executable=True\nfPIC=True\nshared=False"
+   },
+   "16e62e62-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "msgpack/3.2.0@bincrafters/stable#0:534dcc368c999e07e81f146b3466b8f656ef1f55#0",
+    "options": "fPIC=True\nheader_only=False\nshared=False\nwith_boost=False"
+   },
+   "16e63678-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "libpng/1.6.37#0:9f67cefb3b597b342ffd9241a4a7dc5a0df50bef#0",
+    "options": "api_prefix=None\nfPIC=True\nshared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e620fc-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "pcre/8.41#0:fc3175c1863d25e78970d6201cdaf9c2a294f88a#0",
+    "options": "build_pcrecpp=False\nbuild_pcregrep=False\nfPIC=True\nshared=False\nwith_bzip2=True\nwith_jit=False\nwith_unicode_properties=False\nwith_utf=False\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:fPIC=True\nbzip2:shared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "bzip2/1.0.8#0": "16e63722-fb81-11e9-98ed-32001404c2e0",
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e64000-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "openssl/1.1.1d#0:9f67cefb3b597b342ffd9241a4a7dc5a0df50bef#0",
+    "options": "386=False\nfPIC=True\nno_asm=False\nno_async=False\nno_bf=False\nno_cast=False\nno_des=False\nno_dh=False\nno_dsa=False\nno_dso=False\nno_hmac=False\nno_md2=False\nno_md5=False\nno_mdc2=False\nno_rc2=False\nno_rc4=False\nno_rc5=False\nno_rsa=False\nno_sha=False\nno_sse2=False\nno_threads=False\nno_zlib=False\nopenssldir=None\nshared=False\nzlib:fPIC=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": {
+     "zlib/1.2.11#0": "16e618d2-fb81-11e9-98ed-32001404c2e0"
+    }
+   },
+   "16e61238-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "libiconv/1.15#0:534dcc368c999e07e81f146b3466b8f656ef1f55#0",
+    "options": "fPIC=True\nshared=False"
+   },
+   "16e62eee-fb81-11e9-98ed-32001404c2e0": {
+    "pref": "protoc_installer/3.6.1@bincrafters/stable#0:2e75a38ab42eff687ae1ee29a83956368f5e97fe#0",
+    "options": "protobuf:fPIC=True\nprotobuf:lite=False\nprotobuf:shared=False\nprotobuf:with_zlib=False",
+    "requires": {
+     "protobuf/3.6.1@bincrafters/stable#0": "16e61850-fb81-11e9-98ed-32001404c2e0"
+    }
+   }
+  }
+ },
+ "version": "0.1"
+}

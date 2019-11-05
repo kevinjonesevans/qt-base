@@ -1,12 +1,13 @@
-[build_requires]
-protoc_installer/3.6.1@bincrafters/stable
-
 [requires]
 protobuf/3.6.1@bincrafters/stable
-qt/5.13.1@bincrafters/stable
+qt/5.13.2@bincrafters/stable
 jsonformoderncpp/3.7.0@vthiery/stable
 gtest/1.8.1@bincrafters/stable
 msgpack/3.2.0@bincrafters/stable
+hdf5/1.8.21@kwc_bintray/stable
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
 
 [generators]
 cmake
